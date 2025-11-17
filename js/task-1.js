@@ -1,8 +1,7 @@
-function slugify(title) { 
-    const lowTitle = title.toLowerCase()
-    result = lowTitle.split(' ').join('-')
-    return result
+function slugify(title) {
+  return title.toLowerCase().split(' ').join('-');
 }
+
 
 console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
 console.log(slugify("English for developer")); // "english-for-developer"
